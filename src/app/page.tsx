@@ -1,5 +1,4 @@
 import Hero from "@/components/public/hero";
-import MyMarquee from "@/components/public/mymarquee";
 import Navbar from "@/components/public/navbar";
 
 

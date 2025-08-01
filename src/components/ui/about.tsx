@@ -71,7 +71,6 @@ const defaultAchievements = [
 
 const About3 = ({
   // Thematic title and description
-  title = "We're on a Mission to Democratize Data",
   description = "AnalyticalHigh was founded by a team of data scientists and engineers passionate about making complex data analysis accessible to everyone. We build intuitive tools that empower businesses to discover insights and drive growth.",
   // Thematic alt text for images
   mainImage = {
@@ -104,7 +103,7 @@ const About3 = ({
       <div className="container mx-auto  ">
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
           <h1 className="bg-clip-text text-transparent text-left bg-accent  text-5xl font-semibold">
-        We're on a mission to democratize  <span className='bg-gradient-to-r from-primary to-accent text-transparent bg-cover bg-clip-text font-extrabold'>Data</span>
+        We-re on a mission to democratize  <span className='bg-gradient-to-r from-primary to-accent text-transparent bg-cover bg-clip-text font-extrabold'>Data</span>
       </h1>
           <p className="text-muted-foreground">{description}</p>
         </div>
