@@ -6,7 +6,7 @@ import Navbar from "@/components/public/navbar";
 export default function Home() {
 
   return (
-    <div className="relative w-full flex-col content-center">
+    <div className="relative w-full h-dvh flex-col content-center">
       <Navbar/>
       <Hero/>
     </div>
