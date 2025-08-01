@@ -123,7 +123,7 @@ const ReviewCard = ({
 // 4. The main Marquee component structure
 export default function MyMarquee() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-10">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg  py-10 ">
       <Marquee pauseOnHover className="[--duration:60s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

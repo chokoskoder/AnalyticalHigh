@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./button";
 import Image from "next/image";
 import logo from "../../../public/logo.svg"
+import { useRouter } from "next/navigation";
 
 
 export const FloatingNav = ({
@@ -22,6 +23,12 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
+  const router = useRouter();
+
+  const redirect = ()=>{
+    router.push('/login')
+  }
+
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);
@@ -77,7 +84,9 @@ export const FloatingNav = ({
         ))}
        </div>
 
-        <Button variant={"default"} size="sm">
+        <Button variant={"default"} size="sm" onClick={()=>{
+          redirect();
+        }}>
                     <span>Login</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px h-px" />
         </Button>
